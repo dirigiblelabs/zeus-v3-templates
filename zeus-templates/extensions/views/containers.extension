@@ -1,0 +1,5 @@
+{
+	"module": "zeus-templates/views/containers/view.js",
+	"extensionPoint": "zeus-view",
+	"description": "Containers View"
+}
