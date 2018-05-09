@@ -10,7 +10,7 @@
 
 exports.getView = function() {
 	return {
-		'id': 'containers',
+		'id': 'template-containers',
 		'name': 'Containers',
 		'factory': 'frame',
 		'region': 'center-bottom',

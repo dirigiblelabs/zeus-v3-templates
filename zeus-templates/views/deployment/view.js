@@ -10,7 +10,7 @@
 
 exports.getView = function() {
 	return {
-		'id': 'deployment',
+		'id': 'template-deployment',
 		'name': 'Deployment',
 		'factory': 'frame',
 		'region': 'center-bottom',

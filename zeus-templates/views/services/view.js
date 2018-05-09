@@ -10,7 +10,7 @@
 
 exports.getView = function() {
 	return {
-		'id': 'services',
+		'id': 'template-services',
 		'name': 'Services',
 		'factory': 'frame',
 		'region': 'center-bottom',
