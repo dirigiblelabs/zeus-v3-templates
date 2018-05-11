@@ -1,0 +1,31 @@
+{
+    "schema": {
+        "structures": [
+            {
+                "name": "ZEUS_TEMPLATES",
+                "type": "TABLE",
+                "columns": 
+                [
+                    {
+                        "name": "ENTITY1ID",
+                        "type": "INTEGER",
+                        "length": "0",
+                        "primaryKey": "true",
+                        "identity": "",
+                        "precision": "",
+                        "scale": ""
+                    },
+                    {
+                        "name": "PROPERTY2",
+                        "type": "VARCHAR",
+                        "length": "20",
+                        "primaryKey": "false",
+                        "identity": "",
+                        "precision": "",
+                        "scale": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

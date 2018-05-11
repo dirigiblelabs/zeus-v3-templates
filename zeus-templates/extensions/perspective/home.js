@@ -8,13 +8,11 @@
  * SAP - initial API and implementation
  */
 
-exports.getView = function() {
+exports.getPerspective = function() {
 	return {
-		'id': 'template-services',
-		'name': 'Services',
-		'factory': 'frame',
-		'region': 'center-bottom',
-		'label': 'Services',
-		'link': '../zeus-templates/views/services/index.html'
+		'name': 'Zeus - Templates',
+		'link': '/services/v3/web/zeus-templates/index.html',
+		'order': '999',
+		'image': 'life-ring'
 	};
 };

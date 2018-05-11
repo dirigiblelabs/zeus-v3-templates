@@ -1,0 +1,5 @@
+{
+	'description': 'Templates view',
+	'extensionPoint': 'shell-zeus-templates-view',
+	'module': 'zeus-templates/views/Templates/view.js'
+}

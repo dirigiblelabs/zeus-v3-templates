@@ -1,5 +1,0 @@
-{
-	"module": "zeus-templates/views/deployment/view.js",
-	"extensionPoint": "zeus-view",
-	"description": "Deployment View"
-}

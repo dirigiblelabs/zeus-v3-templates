@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 SAP and others.
+ * Copyright (c) 2017 SAP and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -8,17 +8,13 @@
  * SAP - initial API and implementation
  */
 
-exports.getMenu = function() {
+exports.getView = function() {
 	return {
-		"name": "Templates",
-		"link": "#",
-		"order": "100",
-		"onClick": "alert('Terminal has been clicked')",
-		"items":[{
-			"name": "Properties",
-			"link": "#",
-			"order": "110",
-			"onClick": "alert('Properties has been clicked')"
-		}]
+		'id': 'Templates',
+		'name': 'Templates',
+		'label': 'Templates',
+		'factory': 'frame',
+		// 'region': 'center-bottom',
+		'link': '/services/v3/web/zeus-templates/views/Templates/index.html'
 	};
-}
+};

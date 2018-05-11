@@ -8,13 +8,11 @@
  * SAP - initial API and implementation
  */
 
-exports.getView = function() {
+exports.getMenu = function() {
 	return {
-		'id': 'template-containers',
-		'name': 'Containers',
-		'factory': 'frame',
-		'region': 'center-bottom',
-		'label': 'Containers',
-		'link': '../zeus-templates/views/containers/index.html'
+		'id': 'Templates',
+		'name': 'Templates',
+		'link': '#',
+		'order': 800
 	};
 };

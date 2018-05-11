@@ -1,5 +1,0 @@
-{
-	"module": "zeus-templates/views/services/view.js",
-	"extensionPoint": "zeus-view",
-	"description": "Services View"
-}

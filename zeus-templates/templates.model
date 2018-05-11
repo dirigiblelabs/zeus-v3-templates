@@ -1,0 +1,67 @@
+{
+    "model": {
+        "entities": [
+            {
+                "name": "Templates",
+                "dataName": "ZEUS_TEMPLATES",
+                "isPrimary": "true",
+                "menuKey": "templates",
+                "menuLabel": "Templates",
+                "menuIndex": 100,
+                "layoutType": "MANAGE",
+                "properties": [
+                    {
+                        "dataName": "ENTITY1ID",
+                        "name": "entity1Id",
+                        "dataType": "INTEGER",
+                        "dataLength": 0,
+                        "dataDefaultValue": null,
+                        "dataPrimaryKey": "true",
+                        "dataAutoIncrement": "true",
+                        "dataNotNull": "false",
+                        "dataUnique": "false",
+                        "dataPrecision": null,
+                        "dataScale": null,
+                        "relationshipType": null,
+                        "relationshipCardinality": null,
+                        "relationshipName": null,
+                        "widgetType": "TEXTBOX",
+                        "widgetLength": "20",
+                        "widgetLabel": null,
+                        "widgetShortLabel": null,
+                        "widgetPattern": null,
+                        "widgetFormat": null,
+                        "widgetSection": null,
+                        "widgetService": null,
+                        "widgetIsMajor": "true"
+                    },
+                    {
+                        "dataName": "PROPERTY2",
+                        "name": "property2",
+                        "dataType": "VARCHAR",
+                        "dataLength": "20",
+                        "dataDefaultValue": null,
+                        "dataPrimaryKey": "false",
+                        "dataAutoIncrement": "false",
+                        "dataNotNull": "false",
+                        "dataUnique": "false",
+                        "dataPrecision": null,
+                        "dataScale": null,
+                        "relationshipType": null,
+                        "relationshipCardinality": null,
+                        "relationshipName": null,
+                        "widgetType": "TEXTBOX",
+                        "widgetLength": "20",
+                        "widgetLabel": null,
+                        "widgetShortLabel": null,
+                        "widgetPattern": null,
+                        "widgetFormat": null,
+                        "widgetSection": null,
+                        "widgetService": null,
+                        "widgetIsMajor": "true"
+                    }
+                ]
+            }
+        ]
+    }
+}

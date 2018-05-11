@@ -1,5 +1,0 @@
-{
-	"module": "zeus-templates/perspective/templates.js",
-	"extensionPoint": "zeus-perspective",
-	"description": "Templates Perspective"
-}

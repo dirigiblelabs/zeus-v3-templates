@@ -1,0 +1,9 @@
+<model>
+ <entities>
+  <entity name="Templates" dataName="ZEUS_TEMPLATES" isPrimary="true" menuKey="templates" menuLabel="Templates" menuIndex="100" layoutType="MANAGE">
+    <property name="entity1Id" dataName="ENTITY1ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataIdentity="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="property2" dataName="PROPERTY2" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataIdentity="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+  </entity>
+ </entities>
+ <mxGraphModel><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="2" style="entity" vertex="1" parent="1"><Entity name="Templates" dataName="ZEUS_TEMPLATES" menuKey="templates" menuLabel="Templates" type="Entity" as="value"/><mxGeometry x="50" y="20" width="200" height="80" as="geometry"><mxRectangle width="200" height="28" as="alternateBounds"/></mxGeometry></mxCell><mxCell id="3" vertex="1" connectable="0" parent="2"><Property name="entity1Id" dataName="ENTITY1ID" dataType="INTEGER" dataLength="0" dataPrimaryKey="true" dataAutoIncrement="true" as="value"/><mxGeometry y="28" width="200" height="26" as="geometry"/></mxCell><mxCell id="4" vertex="1" connectable="0" parent="2"><Property name="property2" dataName="PROPERTY2" as="value"/><mxGeometry y="54" width="200" height="26" as="geometry"/></mxCell></root></mxGraphModel>
+</model>

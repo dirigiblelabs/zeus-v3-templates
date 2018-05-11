@@ -1,0 +1,4 @@
+{
+	'description': 'Extension Point for the zeus-templates View Providers',
+	'name': 'shell-zeus-templates-view'
+}
