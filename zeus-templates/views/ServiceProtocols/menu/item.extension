@@ -1,5 +1,0 @@
-{
-	'description': 'ServiceProtocols menu',
-	'extensionPoint': 'shell-zeus-templates-menu',
-	'module': 'zeus-templates/views/ServiceProtocols/menu/item.js'
-}

@@ -19,7 +19,7 @@
     <property name="Port" dataName="PORT" dataType="INTEGER" dataLength="undefined" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="NUMBER" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Template" dataName="ZTS_TEMPLATE" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipType="COMPOSITION" relationshipCardinality="1_n" relationshipName="Services_Templates" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
-  <entity name="ServiceProtocols" dataName="ZEUS_TEMPLATE_SERVICE_PROTOCOLS" isPrimary="true" menuKey="protocols" menuLabel="Protocols" menuIndex="100" layoutType="MANAGE">
+  <entity name="ServiceProtocols" dataName="ZEUS_TEMPLATE_SERVICE_PROTOCOLS" isPrimary="false" menuKey="protocols" menuLabel="Protocols" menuIndex="100" layoutType="MANAGE">
     <property name="Id" dataName="ZTSP_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Name" dataName="ZTSP_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
@@ -34,7 +34,7 @@
     <property name="Protocol" dataName="ZC_PROTOCOL" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipName="Containers_ContainerProtocols" widgetType="DROPDOWN" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Port" dataName="PORT" dataType="INTEGER" dataLength="undefined" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="NUMBER" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
-  <entity name="ContainerProtocols" dataName="ZEUS_CONTAINER_PROTOCOLS" isPrimary="true" menuKey="containerprotocols" menuLabel="ContainerProtocols" menuIndex="100" layoutType="MANAGE">
+  <entity name="ContainerProtocols" dataName="ZEUS_CONTAINER_PROTOCOLS" isPrimary="false" menuKey="containerprotocols" menuLabel="ContainerProtocols" menuIndex="100" layoutType="MANAGE">
     <property name="Id" dataName="ZCP_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Name" dataName="ZCP_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>

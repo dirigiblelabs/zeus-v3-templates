@@ -361,7 +361,7 @@
             {
                 "name": "ServiceProtocols",
                 "dataName": "ZEUS_TEMPLATE_SERVICE_PROTOCOLS",
-                "isPrimary": "true",
+                "isPrimary": false,
                 "menuKey": "protocols",
                 "menuLabel": "Protocols",
                 "menuIndex": 100,
@@ -578,7 +578,7 @@
             {
                 "name": "ContainerProtocols",
                 "dataName": "ZEUS_CONTAINER_PROTOCOLS",
-                "isPrimary": "true",
+                "isPrimary": false,
                 "menuKey": "containerprotocols",
                 "menuLabel": "ContainerProtocols",
                 "menuIndex": 100,
