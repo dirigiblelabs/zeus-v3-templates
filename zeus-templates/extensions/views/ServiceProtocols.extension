@@ -1,0 +1,5 @@
+{
+	'description': 'ServiceProtocols view',
+	'extensionPoint': 'launchpad-zeus-templates-view',
+	'module': 'zeus-templates/views/ServiceProtocols/view.js'
+}

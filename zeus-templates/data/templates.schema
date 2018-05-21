@@ -52,7 +52,7 @@
                     {
                         "name": "ZTV_VALUE",
                         "type": "VARCHAR",
-                        "length": "20",
+                        "length": "64",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
@@ -103,8 +103,8 @@
                     },
                     {
                         "name": "PORT",
-                        "type": "VARCHAR",
-                        "length": "20",
+                        "type": "INTEGER",
+                        "length": "",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
@@ -172,7 +172,7 @@
                     {
                         "name": "IMAGE",
                         "type": "VARCHAR",
-                        "length": "20",
+                        "length": "64",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
@@ -189,8 +189,8 @@
                     },
                     {
                         "name": "PORT",
-                        "type": "VARCHAR",
-                        "length": "20",
+                        "type": "INTEGER",
+                        "length": "",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",

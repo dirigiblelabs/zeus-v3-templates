@@ -29,7 +29,7 @@ var dao = daoApi.create({
 		},		{
 			'name':  'Port',
 			'column': 'PORT',
-			'type':'VARCHAR',
+			'type':'INTEGER',
 			'id': false,
 			'required': true
 		}]

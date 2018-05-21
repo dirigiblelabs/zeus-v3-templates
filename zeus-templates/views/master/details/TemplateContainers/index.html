@@ -23,6 +23,7 @@
 				<tr>
 					<th>#</th>
 					<th class="text-capitalize">Id</th>
+					<th class="text-capitalize">Template</th>
 					<th class="text-capitalize">Container</th>
 					<th></th>
 				</tr>
@@ -31,6 +32,7 @@
 				<tr ng-repeat="next in data">
 					<td>{{$index + 1}}</td>
 					<td>{{next.Id}}</td>
+					<td>{{next.Template}}</td>
 					<td>{{containerOptionValue(next.Container)}}</td>
 					<td>
 						<i class="close fa fa-2x fa-remove" ng-click="openDeleteDialog(next)"></i>

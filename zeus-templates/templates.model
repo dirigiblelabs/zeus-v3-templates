@@ -34,7 +34,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -118,7 +118,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -154,7 +154,7 @@
                         "name": "Value",
                         "dataName": "ZTV_VALUE",
                         "dataType": "VARCHAR",
-                        "dataLength": "20",
+                        "dataLength": "64",
                         "dataDefaultValue": null,
                         "dataPrimaryKey": "false",
                         "dataAutoIncrement": "false",
@@ -202,7 +202,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -304,8 +304,7 @@
                     {
                         "name": "Port",
                         "dataName": "PORT",
-                        "dataType": "VARCHAR",
-                        "dataLength": "20",
+                        "dataType": "INTEGER",
                         "dataDefaultValue": null,
                         "dataPrimaryKey": "false",
                         "dataAutoIncrement": "false",
@@ -353,7 +352,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -362,7 +361,7 @@
             {
                 "name": "ServiceProtocols",
                 "dataName": "ZEUS_TEMPLATE_SERVICE_PROTOCOLS",
-                "isPrimary": false,
+                "isPrimary": "true",
                 "menuKey": "protocols",
                 "menuLabel": "Protocols",
                 "menuIndex": 100,
@@ -403,7 +402,7 @@
                         "dataLength": "20",
                         "dataDefaultValue": null,
                         "dataPrimaryKey": "false",
-                        "dataAutoIncrement": false,
+                        "dataAutoIncrement": "false",
                         "dataNotNull": "true",
                         "dataUnique": "true",
                         "dataPrecision": null,
@@ -495,7 +494,7 @@
                         "name": "Image",
                         "dataName": "IMAGE",
                         "dataType": "VARCHAR",
-                        "dataLength": "20",
+                        "dataLength": "64",
                         "dataDefaultValue": null,
                         "dataPrimaryKey": "false",
                         "dataAutoIncrement": "false",
@@ -550,8 +549,7 @@
                     {
                         "name": "Port",
                         "dataName": "PORT",
-                        "dataType": "VARCHAR",
-                        "dataLength": "20",
+                        "dataType": "INTEGER",
                         "dataDefaultValue": null,
                         "dataPrimaryKey": "false",
                         "dataAutoIncrement": "false",
@@ -563,7 +561,7 @@
                         "relationshipCardinality": null,
                         "relationshipName": null,
                         "relationshipEntityName": null,
-                        "widgetType": "TEXTBOX",
+                        "widgetType": "NUMBER",
                         "widgetLength": "20",
                         "widgetLabel": null,
                         "widgetShortLabel": null,
@@ -580,7 +578,7 @@
             {
                 "name": "ContainerProtocols",
                 "dataName": "ZEUS_CONTAINER_PROTOCOLS",
-                "isPrimary": false,
+                "isPrimary": "true",
                 "menuKey": "containerprotocols",
                 "menuLabel": "ContainerProtocols",
                 "menuIndex": 100,
@@ -705,7 +703,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     },
