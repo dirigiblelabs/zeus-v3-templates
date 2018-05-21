@@ -202,7 +202,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": false,
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -353,7 +353,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": false,
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -705,7 +705,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": "true",
+                        "widgetIsMajor": false,
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     },
