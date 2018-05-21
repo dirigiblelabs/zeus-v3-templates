@@ -1,26 +1,26 @@
 <model>
  <entities>
   <entity name="Templates" dataName="ZEUS_TEMPLATES" isPrimary="true" menuKey="templates" menuLabel="Templates" menuIndex="100" layoutType="MANAGE_MASTER">
-    <property name="Id" dataName="ZT_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZT_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Name" dataName="ZT_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
   <entity name="Variables" dataName="ZEUST_TEMPLATE_VARIABLES" isPrimary="true" menuKey="variables" menuLabel="Variables" menuIndex="100" layoutType="MANAGE_DETAILS">
-    <property name="Id" dataName="ZTV_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZTV_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Name" dataName="ZTV_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Value" dataName="ZTV_VALUE" dataType="VARCHAR" dataLength="64" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
-    <property name="Template" dataName="ZTV_TEMPLATE" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipType="COMPOSITION" relationshipCardinality="1_n" relationshipName="Variables_Templates" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Template" dataName="ZTV_TEMPLATE" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipType="COMPOSITION" relationshipCardinality="1_n" relationshipName="Variables_Templates" widgetType="TEXTBOX" widgetLength="20"></property>
   </entity>
   <relation name="Variables_Templates" type="relation" entity="Variables" relationName="Variables_Templates" property="Template" referenced="Templates" referencedProperty="Id">
   </relation>
   <entity name="Services" dataName="ZEUS_TEMPLATE_SERVICES" isPrimary="true" menuKey="services" menuLabel="Services" menuIndex="100" layoutType="MANAGE_DETAILS">
-    <property name="Id" dataName="ZTS_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZTS_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Name" dataName="ZTS_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Protocol" dataName="ZTS_PROTOCOL" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipName="Services_ServiceProtocols" widgetType="DROPDOWN" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Port" dataName="PORT" dataType="INTEGER" dataLength="undefined" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="NUMBER" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Template" dataName="ZTS_TEMPLATE" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipType="COMPOSITION" relationshipCardinality="1_n" relationshipName="Services_Templates" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
   <entity name="ServiceProtocols" dataName="ZEUS_TEMPLATE_SERVICE_PROTOCOLS" isPrimary="false" menuKey="protocols" menuLabel="Protocols" menuIndex="100" layoutType="MANAGE">
-    <property name="Id" dataName="ZTSP_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZTSP_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Name" dataName="ZTSP_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
   <relation name="Services_ServiceProtocols" type="relation" entity="Services" relationName="Services_ServiceProtocols" property="Protocol" referenced="ServiceProtocols" referencedProperty="Id">
@@ -28,20 +28,20 @@
   <relation name="Services_Templates" type="relation" entity="Services" relationName="Services_Templates" property="Template" referenced="Templates" referencedProperty="Id">
   </relation>
   <entity name="Containers" dataName="ZEUS_CONTAINERS" isPrimary="true" menuKey="containers" menuLabel="Containers" menuIndex="100" layoutType="MANAGE">
-    <property name="Id" dataName="ZC_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZC_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Name" dataName="NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Image" dataName="IMAGE" dataType="VARCHAR" dataLength="64" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Protocol" dataName="ZC_PROTOCOL" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipName="Containers_ContainerProtocols" widgetType="DROPDOWN" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Port" dataName="PORT" dataType="INTEGER" dataLength="undefined" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="NUMBER" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
   <entity name="ContainerProtocols" dataName="ZEUS_CONTAINER_PROTOCOLS" isPrimary="false" menuKey="containerprotocols" menuLabel="ContainerProtocols" menuIndex="100" layoutType="MANAGE">
-    <property name="Id" dataName="ZCP_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZCP_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Name" dataName="ZCP_NAME" dataType="VARCHAR" dataLength="20" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
   </entity>
   <relation name="Containers_ContainerProtocols" type="relation" entity="Containers" relationName="Containers_ContainerProtocols" property="Protocol" referenced="ContainerProtocols" referencedProperty="Id">
   </relation>
   <entity name="TemplateContainers" dataName="ZEUS_TEMPLATE_CONTAINERS" isPrimary="true" menuKey="templatecontainers" menuLabel="TemplateContainers" menuIndex="100" layoutType="MANAGE_DETAILS">
-    <property name="Id" dataName="ZTC_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
+    <property name="Id" dataName="ZTC_ID" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" widgetType="TEXTBOX" widgetLength="20"></property>
     <property name="Template" dataName="TEMPLATE" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipType="COMPOSITION" relationshipCardinality="1_n" relationshipName="TemplateContainers_Templates" widgetType="TEXTBOX" widgetLength="20" widgetIsMajor="true"></property>
     <property name="Container" dataName="ZTC_CONTAINER" dataType="INTEGER" dataLength="0" dataNullable="false" dataPrimaryKey="true" dataAutoIncrement="true" dataUnique="true" relationshipName="TemplateContainers_Containers" widgetType="DROPDOWN" widgetLength="20" widgetIsMajor="true"></property>
   </entity>

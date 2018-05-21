@@ -22,7 +22,6 @@
 			<thead>
 				<tr>
 					<th>#</th>
-					<th class="text-capitalize">Id</th>
 					<th class="text-capitalize">Name</th>
 					<th class="text-capitalize">Protocol</th>
 					<th class="text-capitalize">Port</th>
@@ -33,7 +32,6 @@
 			<tbody>
 				<tr ng-repeat="next in data">
 					<td>{{$index + 1}}</td>
-					<td>{{next.Id}}</td>
 					<td>{{next.Name}}</td>
 					<td>{{protocolOptionValue(next.Protocol)}}</td>
 					<td>{{next.Port}}</td>

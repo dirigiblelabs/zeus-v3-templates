@@ -22,7 +22,6 @@
 			<thead>
 				<tr>
 					<th>#</th>
-					<th class="text-capitalize">Id</th>
 					<th class="text-capitalize">Name</th>
 					<th></th>
 				</tr>
@@ -30,7 +29,6 @@
 			<tbody>
 				<tr ng-repeat="next in data">
 					<td>{{$index + 1}}</td>
-					<td>{{next.Id}}</td>
 					<td>{{next.Name}}</td>
 					<td>
 						<i class="close fa fa-2x fa-remove" ng-click="openDeleteDialog(next)"></i>
