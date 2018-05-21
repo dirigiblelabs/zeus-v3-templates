@@ -102,9 +102,9 @@
                         "scale": ""
                     },
                     {
-                        "name": "PORT",
+                        "name": "ZTS_PORT",
                         "type": "INTEGER",
-                        "length": "",
+                        "length": "20",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
@@ -161,7 +161,7 @@
                         "scale": ""
                     },
                     {
-                        "name": "NAME",
+                        "name": "ZC_NAME",
                         "type": "VARCHAR",
                         "length": "20",
                         "primaryKey": "false",
@@ -170,7 +170,7 @@
                         "scale": ""
                     },
                     {
-                        "name": "IMAGE",
+                        "name": "ZC_IMAGE",
                         "type": "VARCHAR",
                         "length": "64",
                         "primaryKey": "false",
@@ -188,9 +188,9 @@
                         "scale": ""
                     },
                     {
-                        "name": "PORT",
+                        "name": "ZC_PORT",
                         "type": "INTEGER",
-                        "length": "",
+                        "length": "20",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
@@ -238,7 +238,7 @@
                         "scale": ""
                     },
                     {
-                        "name": "TEMPLATE",
+                        "name": "ZTC_TEMPLATE",
                         "type": "INTEGER",
                         "length": "0",
                         "primaryKey": "false",

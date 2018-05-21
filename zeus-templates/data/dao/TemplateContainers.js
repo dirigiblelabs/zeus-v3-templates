@@ -10,7 +10,7 @@ var dao = daoApi.create({
 			'required': true
 		},		{
 			'name':  'Template',
-			'column': 'TEMPLATE',
+			'column': 'ZTC_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
 			'required': true

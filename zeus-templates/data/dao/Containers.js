@@ -10,13 +10,13 @@ var dao = daoApi.create({
 			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'NAME',
+			'column': 'ZC_NAME',
 			'type':'VARCHAR',
 			'id': false,
 			'required': true
 		},		{
 			'name':  'Image',
-			'column': 'IMAGE',
+			'column': 'ZC_IMAGE',
 			'type':'VARCHAR',
 			'id': false,
 			'required': true
@@ -28,7 +28,7 @@ var dao = daoApi.create({
 			'required': true
 		},		{
 			'name':  'Port',
-			'column': 'PORT',
+			'column': 'ZC_PORT',
 			'type':'INTEGER',
 			'id': false,
 			'required': true

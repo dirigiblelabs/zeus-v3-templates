@@ -22,7 +22,7 @@ var dao = daoApi.create({
 			'required': true
 		},		{
 			'name':  'Port',
-			'column': 'PORT',
+			'column': 'ZTS_PORT',
 			'type':'INTEGER',
 			'id': false,
 			'required': true
