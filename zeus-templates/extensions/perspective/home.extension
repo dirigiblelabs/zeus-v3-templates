@@ -1,5 +1,0 @@
-{
-	'description': ' perspective',
-	'extensionPoint': 'shell-zeus-perspective',
-	'module': 'zeus-templates/extensions/perspective/home.js'
-}

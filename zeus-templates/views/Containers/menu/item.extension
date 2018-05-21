@@ -1,0 +1,5 @@
+{
+	'description': 'Containers menu',
+	'extensionPoint': 'shell-zeus-templates-menu',
+	'module': 'zeus-templates/views/Containers/menu/item.js'
+}

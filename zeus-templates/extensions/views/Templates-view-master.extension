@@ -1,0 +1,5 @@
+{
+	'description': 'Templates view',
+	'extensionPoint': 'launchpad-zeus-templates-Templates-view',
+	'module': 'zeus-templates/views/master/Templates/master/view.js'
+}

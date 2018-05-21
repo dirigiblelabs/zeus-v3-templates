@@ -1,0 +1,5 @@
+{
+	'description': 'Containers view',
+	'extensionPoint': 'launchpad-zeus-templates-view',
+	'module': 'zeus-templates/views/Containers/view.js'
+}

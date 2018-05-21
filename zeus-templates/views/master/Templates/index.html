@@ -36,11 +36,8 @@
 
 <body ng-app="workbench" ng-controller="WorkbenchController">
 
-	<div menu menu-extension-point="launchpad-zeus-templates-menu"></div>
-
 	<div class="shell">
-		<div class="sidebar list-group" sidebar active="Workbench"></div>
-		<div id="zeus-templates" class="plane" views-layout views-layout-model="layoutModel" views-extension-point="launchpad-zeus-templates-view"></div>
+		<div id="zeus-templates-Templates" class="plane" views-layout views-layout-model="layoutModel" views-extension-point="launchpad-zeus-templates-Templates-view"></div>
 	</div>
 	<div class="statusbar" status-bar></div>
 	
@@ -92,7 +89,7 @@
 				}
 			};
 
-			$http.get('/services/v3/js/zeus/api/launchpad/views.js?extensionPoint=launchpad-zeus-templates-view')
+			$http.get('/services/v3/js/zeus/api/launchpad/views.js?extensionPoint=launchpad-zeus-templates-Templates-view')
 			.success(function(views) {
 				for (var i = 0 ; i < views.length; i ++) {
 					$scope.layoutModel.views.push(views[i].id);

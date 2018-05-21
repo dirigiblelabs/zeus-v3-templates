@@ -1,5 +1,0 @@
-{
-	'description': 'Templates menu',
-	'extensionPoint': 'shell-zeus-templates-menu',
-	'module': 'zeus-templates/views/Templates/menu/item.js'
-}
