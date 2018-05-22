@@ -11,8 +11,9 @@
 exports.getPerspective = function() {
 	return {
 		'name': 'Zeus',
+		'image': 'files-o',
+
 		'link': '/services/v3/web/zeus-templates/index.html',
-		'order': '999',
-		'image': 'life-ring'
+		'order': 2,
 	};
 };

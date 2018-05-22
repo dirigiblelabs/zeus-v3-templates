@@ -10,8 +10,9 @@
 
 exports.getTile = function() {
 	return {
-		'name': '',
+		'name': 'Templates',
+		'icon': 'files-o',
 		'location': '/services/v3/web/zeus-templates/index.html',
-		'order': 999
+		'order': '2'
 	};
 };
