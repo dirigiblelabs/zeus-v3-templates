@@ -11,8 +11,8 @@
 exports.getView = function() {
 	return {
 		'id': 'TemplateContainers',
-		'name': 'TemplateContainers',
-		'label': 'TemplateContainers',
+		'name': 'Containers',
+		'label': 'Containers',
 		'factory': 'frame',
 		'region': 'center-bottom',
 		'link': '/services/v3/web/zeus-templates/views/master/details/TemplateContainers/index.html'

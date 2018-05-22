@@ -649,7 +649,7 @@
                 "dataName": "ZEUS_TEMPLATE_CONTAINERS",
                 "isPrimary": "true",
                 "menuKey": "templatecontainers",
-                "menuLabel": "TemplateContainers",
+                "menuLabel": "Containers",
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
                 "properties": [
