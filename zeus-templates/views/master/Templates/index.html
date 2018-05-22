@@ -91,10 +91,19 @@
 
 			$http.get('/services/v3/js/zeus/api/launchpad/views.js?extensionPoint=launchpad-zeus-templates-Templates-view')
 			.success(function(views) {
+				var master = [];
+				var details = [];
+
 				for (var i = 0 ; i < views.length; i ++) {
-					$scope.layoutModel.views.push(views[i].id);
+					if (views[i].type !== undefined && views[i].type === 'master') {
+						master.push(views[i].id);
+					} else {
+						details.push(views[i].id);
+					}
 				}
 
+				$scope.layoutModel.views.push.apply($scope.layoutModel.views, master);
+				$scope.layoutModel.views.push.apply($scope.layoutModel.views, details);
 			});
 		}]);
 	</script>

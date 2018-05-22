@@ -34,7 +34,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -118,7 +118,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -202,7 +202,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -241,7 +241,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -353,7 +353,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     }
@@ -362,7 +362,7 @@
             {
                 "name": "ServiceProtocols",
                 "dataName": "ZEUS_TEMPLATE_SERVICE_PROTOCOLS",
-                "isPrimary": false,
+                "isPrimary": "false",
                 "menuKey": "protocols",
                 "menuLabel": "Protocols",
                 "menuIndex": 100,
@@ -392,7 +392,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -459,7 +459,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -580,7 +580,7 @@
             {
                 "name": "ContainerProtocols",
                 "dataName": "ZEUS_CONTAINER_PROTOCOLS",
-                "isPrimary": false,
+                "isPrimary": "false",
                 "menuKey": "containerprotocols",
                 "menuLabel": "ContainerProtocols",
                 "menuIndex": 100,
@@ -610,7 +610,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -677,7 +677,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "false",
                         "widgetDropDownKey": null,
                         "widgetDropDownValue": null
                     },
@@ -705,7 +705,7 @@
                         "widgetFormat": null,
                         "widgetSection": null,
                         "widgetService": null,
-                        "widgetIsMajor": false,
+                        "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Id"
                     },

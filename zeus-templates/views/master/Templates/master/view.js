@@ -15,6 +15,7 @@ exports.getView = function() {
 		'label': 'Templates',
 		'factory': 'frame',
 		'region': 'center-top',
+		'type': 'master',
 		'link': '/services/v3/web/zeus-templates/views/master/Templates/master/index.html'
 	};
 };

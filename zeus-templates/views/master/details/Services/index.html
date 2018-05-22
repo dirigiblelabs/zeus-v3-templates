@@ -25,6 +25,7 @@
 					<th class="text-capitalize">Name</th>
 					<th class="text-capitalize">Protocol</th>
 					<th class="text-capitalize">Port</th>
+					<th class="text-capitalize">Template</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -34,6 +35,7 @@
 					<td>{{next.Name}}</td>
 					<td>{{protocolOptionValue(next.Protocol)}}</td>
 					<td>{{next.Port}}</td>
+					<td>{{next.Template}}</td>
 					<td>
 						<i class="close fa fa-2x fa-remove" ng-click="openDeleteDialog(next)"></i>
 						<i class="close fa fa-2x fa-pencil" ng-click="openEditDialog(next)" style="margin-right: 0.5em"></i>
