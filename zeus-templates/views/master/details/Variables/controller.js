@@ -1,17 +1,37 @@
 angular.module('page', []);
-angular.module('page').controller('PageController', function ($scope, $http) {
+angular.module('page')
+.factory('$messageHub', [function(){
+	var messageHub = new FramesMessageHub();
+
+	var message = function(evtName, data){
+		messageHub.post({data: data}, 'zeus.zeus-templates.Variables.' + evtName);
+	};
+
+	var on = function(topic, callback){
+		messageHub.subscribe(callback, topic);
+	};
+
+	return {
+		message: message,
+		on: on,
+		onTemplatesSelected: function(callback) {
+			on('zeus.zeus-templates.Templates.selected', callback);
+		},
+		messageEntityModified: function() {
+			message('modified');
+		}
+	};
+}])
+.controller('PageController', function ($scope, $http, $messageHub) {
 
 	var api = '/services/v3/js/zeus-templates/api/Variables.js';
 
-
-
 	function load() {
-		$http.get(api)
+		$http.get(api + '?Template=' + $scope.masterEntityId)
 		.success(function(data) {
 			$scope.data = data;
 		});
 	}
-	load();
 
 	$scope.openNewDialog = function() {
 		$scope.actionType = 'new';
@@ -37,10 +57,12 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 	};
 
 	$scope.create = function() {
+		$scope.entity.Template = $scope.masterEntityId;
 		$http.post(api, JSON.stringify($scope.entity))
 		.success(function(data) {
 			load();
 			toggleEntityModal();
+			$messageHub.messageEntityModified();
 		}).error(function(data) {
 			alert(JSON.stringify(data));
 		});
@@ -48,11 +70,14 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 	};
 
 	$scope.update = function() {
+		$scope.entity.Template = $scope.masterEntityId;
+
 		$http.put(api + '/' + $scope.entity.Id, JSON.stringify($scope.entity))
 
 		.success(function(data) {
 			load();
 			toggleEntityModal();
+			$messageHub.messageEntityModified();
 		}).error(function(data) {
 			alert(JSON.stringify(data));
 		})
@@ -63,11 +88,18 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 		.success(function(data) {
 			load();
 			toggleEntityModal();
+			$messageHub.messageEntityModified();
 		}).error(function(data) {
 			alert(JSON.stringify(data));
 		});
 	};
 
+
+
+	$messageHub.onTemplatesSelected(function(event) {
+		$scope.masterEntityId = event.data.id
+		load();
+	});
 
 	function toggleEntityModal() {
 		$('#entityModal').modal('toggle');

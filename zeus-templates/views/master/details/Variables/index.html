@@ -62,10 +62,6 @@
 							<label>Value</label>
 							<input type="text" class="form-control" placeholder="Enter value" ng-model="entity.Value">
 						</div>
-						<div class="form-group">
-							<label>Template</label>
-							<input type="text" class="form-control" placeholder="Enter template" ng-model="entity.Template">
-						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">
 						You are going to delete <b>Variables</b> with <b>Id = {{entity.Id}}</b>.
@@ -86,6 +82,7 @@
 	<script type="text/javascript" src="/services/v3/web/resources/bootstrap/3.3.7/bootstrap.min.js" async></script>
 	<script type="text/javascript" src="/services/v3/web/resources/angular/1.4.7/angular.min.js"></script>
 	<script type="text/javascript" src="/services/v3/web/resources/angular/1.4.7/angular-resource.min.js"></script>
+	<script type="text/javascript" src="/services/v3/web/zeus/resources/js/message-hub.js"></script>
 
 	<script type="text/javascript" src="controller.js"></script>
 

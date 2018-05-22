@@ -4,8 +4,13 @@ var http = require('zeus-templates/api/http');
 
 rs.service()
 	.resource('')
-		.get(function() {
-			var entities = dao.list();
+		.get(function(ctx, request) {
+			var queryOptions = {};
+			var parameters = request.getParameterNames();
+			for (var i = 0; i < parameters.length; i ++) {
+				queryOptions[parameters[i]] = request.getParameter(parameters[i]);
+			}
+			var entities = dao.list(queryOptions);
 			http.sendResponseOk(entities);
 		})
 	.resource('{id}')
@@ -21,14 +26,14 @@ rs.service()
 	.resource('')
 		.post(function(ctx, request, response) {
 			var entity = request.getJSON();
-			entity.id = dao.create(entity);
-			response.setHeader('Content-Location', '/services/v3/js/zeus-templates/api/TemplateContainers.js/' + entity.id);
+			entity.Id = dao.create(entity);
+			response.setHeader('Content-Location', '/services/v3/js/zeus-templates/api/TemplateContainers.js/' + entity.Id);
 			http.sendResponseCreated(entity);
 		})
 	.resource('{id}')
 		.put(function(ctx, request) {
 			var entity = request.getJSON();
-			entity.id = ctx.pathParameters.id;
+			entity.Id = ctx.pathParameters.id;
 			dao.update(entity);
 			http.sendResponseOk(entity);
 		})

@@ -1,15 +1,41 @@
 angular.module('page', []);
-angular.module('page').controller('PageController', function ($scope, $http) {
+angular.module('page')
+.factory('$messageHub', [function(){
+	var messageHub = new FramesMessageHub();
+
+	var message = function(evtName, data){
+		messageHub.post({data: data}, 'zeus.zeus-templates.Containers.' + evtName);
+	};
+
+	var on = function(topic, callback){
+		messageHub.subscribe(callback, topic);
+	};
+
+	return {
+		message: message,
+		on: on,
+		onContainerProtocolsModified: function(callback) {
+			on('zeus.zeus-templates.ContainerProtocols.modified', callback);
+		},
+		messageEntityModified: function() {
+			message('modified');
+		}
+	};
+}])
+.controller('PageController', function ($scope, $http, $messageHub) {
 
 	var api = '/services/v3/js/zeus-templates/api/Containers.js';
 	var protocolOptionsApi = '/services/v3/js/zeus-templates/api/ContainerProtocols.js';
 
 	$scope.protocolOptions = [];
 
-	$http.get(protocolOptionsApi)
-	.success(function(data) {
-		$scope.protocolOptions = data;
-	});
+	function protocolOptionsLoad() {
+		$http.get(protocolOptionsApi)
+		.success(function(data) {
+			$scope.protocolOptions = data;
+		});
+	}
+	protocolOptionsLoad();
 
 	function load() {
 		$http.get(api)
@@ -47,6 +73,7 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 		.success(function(data) {
 			load();
 			toggleEntityModal();
+			$messageHub.messageEntityModified();
 		}).error(function(data) {
 			alert(JSON.stringify(data));
 		});
@@ -59,6 +86,7 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 		.success(function(data) {
 			load();
 			toggleEntityModal();
+			$messageHub.messageEntityModified();
 		}).error(function(data) {
 			alert(JSON.stringify(data));
 		})
@@ -69,6 +97,7 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 		.success(function(data) {
 			load();
 			toggleEntityModal();
+			$messageHub.messageEntityModified();
 		}).error(function(data) {
 			alert(JSON.stringify(data));
 		});
@@ -82,6 +111,8 @@ angular.module('page').controller('PageController', function ($scope, $http) {
 		}
 		return null;
 	};
+
+	$messageHub.onContainerProtocolsModified(protocolOptionsLoad);
 
 	function toggleEntityModal() {
 		$('#entityModal').modal('toggle');
