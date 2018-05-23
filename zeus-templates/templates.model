@@ -370,7 +370,7 @@
                 "properties": [
                     {
                         "name": "Id",
-                        "dataName": "ZTSP_ID",
+                        "dataName": "ZTST_ID",
                         "dataType": "INTEGER",
                         "dataLength": 0,
                         "dataDefaultValue": null,
@@ -398,7 +398,7 @@
                     },
                     {
                         "name": "Name",
-                        "dataName": "ZTSP_NAME",
+                        "dataName": "ZTST_NAME",
                         "dataType": "VARCHAR",
                         "dataLength": "20",
                         "dataDefaultValue": null,

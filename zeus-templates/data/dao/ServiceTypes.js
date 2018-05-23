@@ -4,13 +4,13 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZTSP_ID',
+			'column': 'ZTST_ID',
 			'type':'INTEGER',
 			'id': true,
 			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZTSP_NAME',
+			'column': 'ZTST_NAME',
 			'type':'VARCHAR',
 			'id': false,
 			'required': false

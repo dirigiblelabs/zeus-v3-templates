@@ -127,7 +127,7 @@
                 "columns": 
                 [
                     {
-                        "name": "ZTSP_ID",
+                        "name": "ZTST_ID",
                         "type": "INTEGER",
                         "length": "0",
                         "primaryKey": "true",
@@ -136,7 +136,7 @@
                         "scale": ""
                     },
                     {
-                        "name": "ZTSP_NAME",
+                        "name": "ZTST_NAME",
                         "type": "VARCHAR",
                         "length": "20",
                         "primaryKey": "false",
