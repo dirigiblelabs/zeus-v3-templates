@@ -16,7 +16,7 @@ var dao = daoApi.create({
 			'required': true
 		},		{
 			'name':  'Type',
-			'column': 'ZTS_PROTOCOL',
+			'column': 'ZTS_TYPE',
 			'type':'INTEGER',
 			'id': false,
 			'required': true

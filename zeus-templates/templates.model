@@ -275,7 +275,7 @@
                     },
                     {
                         "name": "Type",
-                        "dataName": "ZTS_PROTOCOL",
+                        "dataName": "ZTS_TYPE",
                         "dataType": "INTEGER",
                         "dataLength": 0,
                         "dataDefaultValue": null,

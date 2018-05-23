@@ -93,7 +93,7 @@
                         "scale": ""
                     },
                     {
-                        "name": "ZTS_PROTOCOL",
+                        "name": "ZTS_TYPE",
                         "type": "INTEGER",
                         "length": "0",
                         "primaryKey": "false",
