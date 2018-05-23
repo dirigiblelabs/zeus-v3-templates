@@ -1,6 +1,6 @@
 var daoApi = require('db/v3/dao');
 var dao = daoApi.create({
-	'table': 'ZEUS_TEMPLATE_SERVICE_PROTOCOLS',
+	'table': 'ZEUS_TEMPLATE_SERVICE_TYPES',
 	'properties': [
 		{
 			'name':  'Id',

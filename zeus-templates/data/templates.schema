@@ -122,7 +122,7 @@
                 ]
             },
             {
-                "name": "ZEUS_TEMPLATE_SERVICE_PROTOCOLS",
+                "name": "ZEUS_TEMPLATE_SERVICE_TYPES",
                 "type": "TABLE",
                 "columns": 
                 [

@@ -274,7 +274,7 @@
                         "widgetDropDownValue": null
                     },
                     {
-                        "name": "Protocol",
+                        "name": "Type",
                         "dataName": "ZTS_PROTOCOL",
                         "dataType": "INTEGER",
                         "dataLength": 0,
@@ -287,8 +287,8 @@
                         "dataScale": null,
                         "relationshipType": null,
                         "relationshipCardinality": null,
-                        "relationshipName": "Services_ServiceProtocols",
-                        "relationshipEntityName": "ServiceProtocols",
+                        "relationshipName": "Services_ServiceTypes",
+                        "relationshipEntityName": "ServiceTypes",
                         "widgetType": "DROPDOWN",
                         "widgetLength": "20",
                         "widgetLabel": null,
@@ -360,11 +360,11 @@
                 ]
             },
             {
-                "name": "ServiceProtocols",
-                "dataName": "ZEUS_TEMPLATE_SERVICE_PROTOCOLS",
+                "name": "ServiceTypes",
+                "dataName": "ZEUS_TEMPLATE_SERVICE_TYPES",
                 "isPrimary": "false",
-                "menuKey": "protocols",
-                "menuLabel": "Protocols",
+                "menuKey": "types",
+                "menuLabel": "Types",
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
                 "properties": [

@@ -23,7 +23,7 @@
 				<tr>
 					<th>#</th>
 					<th class="text-capitalize">Name</th>
-					<th class="text-capitalize">Protocol</th>
+					<th class="text-capitalize">Type</th>
 					<th class="text-capitalize">Port</th>
 					<th></th>
 				</tr>
@@ -32,7 +32,7 @@
 				<tr ng-repeat="next in data">
 					<td>{{$index + 1}}</td>
 					<td>{{next.Name}}</td>
-					<td>{{protocolOptionValue(next.Protocol)}}</td>
+					<td>{{typeOptionValue(next.Type)}}</td>
 					<td>{{next.Port}}</td>
 					<td>
 						<i class="close fa fa-2x fa-remove" ng-click="openDeleteDialog(next)"></i>
@@ -61,8 +61,8 @@
 							<input type="text" class="form-control" placeholder="Enter name" ng-model="entity.Name">
 						</div>
 						<div class="form-group">
-							<label>Protocol</label>
-							<select class="form-control" ng-options="o.Id as o.Name for o in protocolOptions" ng-model="entity.Protocol"></select>
+							<label>Type</label>
+							<select class="form-control" ng-options="o.Id as o.Name for o in typeOptions" ng-model="entity.Type"></select>
 						</div>
 						<div class="form-group">
 							<label>Port</label>

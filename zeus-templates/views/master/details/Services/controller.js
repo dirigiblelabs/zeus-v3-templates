@@ -14,8 +14,8 @@ angular.module('page')
 	return {
 		message: message,
 		on: on,
-		onServiceProtocolsModified: function(callback) {
-			on('zeus.zeus-templates.ServiceProtocols.modified', callback);
+		onServiceTypesModified: function(callback) {
+			on('zeus.zeus-templates.ServiceTypes.modified', callback);
 		},
 		onTemplatesSelected: function(callback) {
 			on('zeus.zeus-templates.Templates.selected', callback);
@@ -28,17 +28,17 @@ angular.module('page')
 .controller('PageController', function ($scope, $http, $messageHub) {
 
 	var api = '/services/v3/js/zeus-templates/api/Services.js';
-	var protocolOptionsApi = '/services/v3/js/zeus-templates/api/ServiceProtocols.js';
+	var typeOptionsApi = '/services/v3/js/zeus-templates/api/ServiceTypes.js';
 
-	$scope.protocolOptions = [];
+	$scope.typeOptions = [];
 
-	function protocolOptionsLoad() {
-		$http.get(protocolOptionsApi)
+	function typeOptionsLoad() {
+		$http.get(typeOptionsApi)
 		.success(function(data) {
-			$scope.protocolOptions = data;
+			$scope.typeOptions = data;
 		});
 	}
-	protocolOptionsLoad();
+	typeOptionsLoad();
 
 	function load() {
 		$http.get(api + '?Template=' + $scope.masterEntityId)
@@ -108,16 +108,16 @@ angular.module('page')
 		});
 	};
 
-	$scope.protocolOptionValue = function(optionKey) {
-		for (var i = 0 ; i < $scope.protocolOptions.length; i ++) {
-			if ($scope.protocolOptions[i].Id === optionKey) {
-				return $scope.protocolOptions[i].Name;
+	$scope.typeOptionValue = function(optionKey) {
+		for (var i = 0 ; i < $scope.typeOptions.length; i ++) {
+			if ($scope.typeOptions[i].Id === optionKey) {
+				return $scope.typeOptions[i].Name;
 			}
 		}
 		return null;
 	};
 
-	$messageHub.onServiceProtocolsModified(protocolOptionsLoad);
+	$messageHub.onServiceTypesModified(typeOptionsLoad);
 
 	$messageHub.onTemplatesSelected(function(event) {
 		$scope.masterEntityId = event.data.id

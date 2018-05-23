@@ -1,5 +1,5 @@
 var rs = require('http/v3/rs');
-var dao = require('zeus-templates/data/dao/ServiceProtocols');
+var dao = require('zeus-templates/data/dao/ServiceTypes');
 var http = require('zeus-templates/api/http');
 
 rs.service()
@@ -20,14 +20,14 @@ rs.service()
 			if (entity) {
 			    http.sendResponseOk(entity);
 			} else {
-				http.sendResponseNotFound('ServiceProtocols not found');
+				http.sendResponseNotFound('ServiceTypes not found');
 			}
 		})
 	.resource('')
 		.post(function(ctx, request, response) {
 			var entity = request.getJSON();
 			entity.Id = dao.create(entity);
-			response.setHeader('Content-Location', '/services/v3/js/zeus-templates/api/ServiceProtocols.js/' + entity.Id);
+			response.setHeader('Content-Location', '/services/v3/js/zeus-templates/api/ServiceTypes.js/' + entity.Id);
 			http.sendResponseCreated(entity);
 		})
 	.resource('{id}')
@@ -45,7 +45,7 @@ rs.service()
 				dao.delete(id);
 				http.sendResponseNoContent();
 			} else {
-				http.sendResponseNotFound('ServiceProtocols not found');
+				http.sendResponseNotFound('ServiceTypes not found');
 			}
 		})
 .execute();
