@@ -43,7 +43,7 @@
                     {
                         "name": "ZTV_NAME",
                         "type": "VARCHAR",
-                        "length": "20",
+                        "length": "64",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
@@ -52,7 +52,7 @@
                     {
                         "name": "ZTV_VALUE",
                         "type": "VARCHAR",
-                        "length": "64",
+                        "length": "128",
                         "primaryKey": "false",
                         "identity": "false",
                         "precision": "",
