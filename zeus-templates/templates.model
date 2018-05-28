@@ -87,7 +87,7 @@
             },
             {
                 "name": "Variables",
-                "dataName": "ZEUST_TEMPLATE_VARIABLES",
+                "dataName": "ZEUS_TEMPLATE_VARIABLES",
                 "isPrimary": "true",
                 "menuKey": "variables",
                 "menuLabel": "Variables",

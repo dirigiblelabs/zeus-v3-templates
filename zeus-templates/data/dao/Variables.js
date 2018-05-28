@@ -1,6 +1,6 @@
 var daoApi = require('db/v3/dao');
 var dao = daoApi.create({
-	'table': 'ZEUST_TEMPLATE_VARIABLES',
+	'table': 'ZEUS_TEMPLATE_VARIABLES',
 	'properties': [
 		{
 			'name':  'Id',

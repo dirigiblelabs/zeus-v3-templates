@@ -27,7 +27,7 @@
                 ]
             },
             {
-                "name": "ZEUST_TEMPLATE_VARIABLES",
+                "name": "ZEUS_TEMPLATE_VARIABLES",
                 "type": "TABLE",
                 "columns": 
                 [
