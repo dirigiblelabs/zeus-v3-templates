@@ -14,6 +14,9 @@ angular.module('page')
 	return {
 		message: message,
 		on: on,
+		onEntityRefresh: function(callback) {
+			on('zeus.zeus-templates.Containers.refresh', callback);
+		},
 		onContainerProtocolsModified: function(callback) {
 			on('zeus.zeus-templates.ContainerProtocols.modified', callback);
 		},
@@ -112,6 +115,7 @@ angular.module('page')
 		return null;
 	};
 
+	$messageHub.onEntityRefresh(load);
 	$messageHub.onContainerProtocolsModified(protocolOptionsLoad);
 
 	function toggleEntityModal() {

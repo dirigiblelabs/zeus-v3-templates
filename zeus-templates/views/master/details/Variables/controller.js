@@ -14,6 +14,9 @@ angular.module('page')
 	return {
 		message: message,
 		on: on,
+		onEntityRefresh: function(callback) {
+			on('zeus.zeus-templates.Variables.refresh', callback);
+		},
 		onTemplatesSelected: function(callback) {
 			on('zeus.zeus-templates.Templates.selected', callback);
 		},
@@ -95,6 +98,7 @@ angular.module('page')
 	};
 
 
+	$messageHub.onEntityRefresh(load);
 
 	$messageHub.onTemplatesSelected(function(event) {
 		$scope.masterEntityId = event.data.id

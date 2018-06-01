@@ -14,6 +14,9 @@ angular.module('page')
 	return {
 		message: message,
 		on: on,
+		onEntityRefresh: function(callback) {
+			on('zeus.zeus-templates.TemplateContainers.refresh', callback);
+		},
 		onContainersModified: function(callback) {
 			on('zeus.zeus-templates.Containers.modified', callback);
 		},
@@ -117,6 +120,7 @@ angular.module('page')
 		return null;
 	};
 
+	$messageHub.onEntityRefresh(load);
 	$messageHub.onContainersModified(containerOptionsLoad);
 
 	$messageHub.onTemplatesSelected(function(event) {

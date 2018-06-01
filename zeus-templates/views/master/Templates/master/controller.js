@@ -14,6 +14,9 @@ angular.module('page')
 	return {
 		message: message,
 		on: on,
+		onEntityRefresh: function(callback) {
+			on('zeus.zeus-templates.Templates.refresh', callback);
+		},
 		messageEntityModified: function() {
 			message('modified');
 		},
@@ -91,6 +94,7 @@ angular.module('page')
 			alert(JSON.stringify(data));
 		});
 	};
+	$messageHub.onEntityRefresh(load);
 
 	$scope.selectEntity = function(entity) {
 		$scope.selectedEntity = entity;

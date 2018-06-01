@@ -14,6 +14,9 @@ angular.module('page')
 	return {
 		message: message,
 		on: on,
+		onEntityRefresh: function(callback) {
+			on('zeus.zeus-templates.Services.refresh', callback);
+		},
 		onServiceTypesModified: function(callback) {
 			on('zeus.zeus-templates.ServiceTypes.modified', callback);
 		},
@@ -117,6 +120,7 @@ angular.module('page')
 		return null;
 	};
 
+	$messageHub.onEntityRefresh(load);
 	$messageHub.onServiceTypesModified(typeOptionsLoad);
 
 	$messageHub.onTemplatesSelected(function(event) {
