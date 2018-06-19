@@ -1,0 +1,5 @@
+{
+	'description': 'Variables view',
+	'extensionPoint': 'launchpad-Templates-Templates-view',
+	'module': 'zeus-templates/ui/Templates/views/master/details/Variables/extensions/view.js'
+}

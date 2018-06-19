@@ -4,11 +4,15 @@
             {
                 "name": "Templates",
                 "dataName": "ZEUS_TEMPLATES",
-                "isPrimary": "true",
+                "dataQuery": null,
+                "type": "PRIMARY",
                 "menuKey": "templates",
                 "menuLabel": "Templates",
                 "menuIndex": 100,
                 "layoutType": "MANAGE_MASTER",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
@@ -42,7 +46,7 @@
                         "name": "Name",
                         "dataName": "ZT_NAME",
                         "dataType": "VARCHAR",
-                        "dataLength": "64",
+                        "dataLength": 64,
                         "dataDefaultValue": null,
                         "dataPrimaryKey": "false",
                         "dataAutoIncrement": "false",
@@ -88,11 +92,15 @@
             {
                 "name": "Variables",
                 "dataName": "ZEUS_TEMPLATE_VARIABLES",
-                "isPrimary": "true",
+                "dataQuery": null,
+                "type": "DEPENDENT",
                 "menuKey": "variables",
                 "menuLabel": "Variables",
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
@@ -211,11 +219,15 @@
             {
                 "name": "Services",
                 "dataName": "ZEUS_TEMPLATE_SERVICES",
-                "isPrimary": "true",
+                "dataQuery": null,
+                "type": "DEPENDENT",
                 "menuKey": "services",
                 "menuLabel": "Services",
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
@@ -362,11 +374,15 @@
             {
                 "name": "ServiceTypes",
                 "dataName": "ZEUS_TEMPLATE_SERVICE_TYPES",
-                "isPrimary": "false",
+                "dataQuery": null,
+                "type": "DEPENDENT",
                 "menuKey": "types",
                 "menuLabel": "Types",
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
@@ -429,11 +445,15 @@
             {
                 "name": "Containers",
                 "dataName": "ZEUS_CONTAINERS",
-                "isPrimary": "true",
+                "dataQuery": null,
+                "type": "PRIMARY",
                 "menuKey": "containers",
                 "menuLabel": "Containers",
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
@@ -580,11 +600,15 @@
             {
                 "name": "ContainerProtocols",
                 "dataName": "ZEUS_CONTAINER_PROTOCOLS",
-                "isPrimary": "false",
+                "dataQuery": null,
+                "type": "DEPENDENT",
                 "menuKey": "containerprotocols",
                 "menuLabel": "ContainerProtocols",
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
@@ -647,11 +671,15 @@
             {
                 "name": "TemplateContainers",
                 "dataName": "ZEUS_TEMPLATE_CONTAINERS",
-                "isPrimary": "true",
+                "dataQuery": null,
+                "type": "DEPENDENT",
                 "menuKey": "templatecontainers",
                 "menuLabel": "Containers",
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
+                "perspectiveName": "Templates",
+                "perspectiveIcon": "files-o",
+                "perspectiveOrder": 200,
                 "properties": [
                     {
                         "name": "Id",
