@@ -28,7 +28,7 @@ angular.module('page')
 .controller('PageController', function ($scope, $http, $messageHub) {
 
 	var api = '/services/v3/js/zeus-templates/api/Containers.js';
-	var protocolOptionsApi = '';
+	var protocolOptionsApi = '/services/v3/js/zeus-templates/api/ContainerProtocols.js';
 
 	$scope.protocolOptions = [];
 

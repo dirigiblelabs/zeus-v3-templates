@@ -31,7 +31,7 @@ angular.module('page')
 .controller('PageController', function ($scope, $http, $messageHub) {
 
 	var api = '/services/v3/js/zeus-templates/api/TemplateContainers.js';
-	var containerOptionsApi = '';
+	var containerOptionsApi = '/services/v3/js/zeus-templates/api/Containers.js';
 
 	$scope.dateOptions = {
 		startingDay: 1
