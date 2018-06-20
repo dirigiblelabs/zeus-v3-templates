@@ -4,7 +4,7 @@
             {
                 "name": "Templates",
                 "dataName": "ZEUS_TEMPLATES",
-                "dataCount": "SELECT COUNT(*) FROM TEMPLATES",
+                "dataCount": "SELECT COUNT(*) AS COUNT FROM ZEUS_TEMPLATES",
                 "dataQuery": "",
                 "type": "PRIMARY",
                 "title": "Templates",
@@ -461,7 +461,7 @@
             {
                 "name": "Containers",
                 "dataName": "ZEUS_CONTAINERS",
-                "dataCount": "SELECT COUNT(*) FROM CONTAINERS",
+                "dataCount": "SELECT COUNT(*) AS COUNT FROM ZEUS_CONTAINERS",
                 "dataQuery": "",
                 "type": "PRIMARY",
                 "title": "Containers",

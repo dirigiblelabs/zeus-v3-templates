@@ -1,3 +1,4 @@
+var query = require('db/v3/query');
 var daoApi = require('db/v3/dao');
 var dao = daoApi.create({
 	'table': 'ZEUS_CONTAINER_PROTOCOLS',
@@ -16,7 +17,6 @@ var dao = daoApi.create({
 			'required': false
 		}]
 });
-
 exports.list = function(settings) {
 	return dao.list(settings);
 };
@@ -35,4 +35,9 @@ exports.update = function(entity) {
 
 exports.delete = function(id) {
 	dao.remove(id);
+};
+
+exports.count = function() {
+	var resultSet = query.execute("SELECT COUNT(*) FROM CONTAINERPROTOCOLS");
+	return resultSet !== null ? resultSet[0].COUNT : 0;
 };

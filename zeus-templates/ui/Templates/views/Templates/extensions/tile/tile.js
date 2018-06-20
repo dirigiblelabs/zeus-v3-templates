@@ -8,11 +8,14 @@
  * SAP - initial API and implementation
  */
 
+var dao = require('zeus-templates/data/dao/Templates.js')
+
 exports.getTile = function() {
 	return {
 		'name': 'Templates',
 		'icon': 'file-o',
 		'location': '/services/v3/web/zeus-templates/ui/Templates/index.html',
+		'count': dao.count(),
 		'order': '200'
 	};
 };
