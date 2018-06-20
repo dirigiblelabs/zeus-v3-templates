@@ -320,7 +320,7 @@
                         "widgetPattern": "",
                         "widgetFormat": "",
                         "widgetSection": "",
-                        "widgetService": "/services/v3/js/zeus-templates/api/ServiceTypes.js",
+                        "widgetService": "",
                         "widgetIsMajor": "true",
                         "widgetDropDownKey": "Id",
                         "widgetDropDownValue": "Name"
