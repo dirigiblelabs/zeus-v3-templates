@@ -31,7 +31,7 @@ angular.module('page')
 .controller('PageController', function ($scope, $http, $messageHub) {
 
 	var api = '/services/v3/js/zeus-templates/api/Services.js';
-	var typeOptionsApi = '/services/v3/js/zeus-templates/api/ServiceTypes.js';
+	var typeOptionsApi = '';
 
 	$scope.dateOptions = {
 		startingDay: 1

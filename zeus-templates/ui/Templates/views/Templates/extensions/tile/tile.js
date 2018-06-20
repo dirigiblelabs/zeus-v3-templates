@@ -11,7 +11,7 @@
 exports.getTile = function() {
 	return {
 		'name': 'Templates',
-		'icon': 'files-o',
+		'icon': 'file-o',
 		'location': '/services/v3/web/zeus-templates/ui/Templates/index.html',
 		'order': '200'
 	};
