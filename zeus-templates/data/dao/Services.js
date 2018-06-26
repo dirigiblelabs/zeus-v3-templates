@@ -5,34 +5,34 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZTS_ID',
+			'column': 'TEMPLATE_SERVICE_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZTS_NAME',
+			'column': 'TEMPLATE_SERVICE_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Type',
-			'column': 'ZTS_TYPE',
+			'column': 'TEMPLATE_SERVICE_TYPE',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Port',
-			'column': 'ZTS_PORT',
+			'column': 'TEMPLATE_SERVICE_PORT',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Template',
-			'column': 'ZTS_TEMPLATE',
+			'column': 'TEMPLATE_SERVICE_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		}]
 });
 exports.list = function(settings) {

@@ -5,31 +5,31 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZT_ID',
+			'column': 'TEMPLATE_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZT_NAME',
+			'column': 'TEMPLATE_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'IsStateful',
-			'column': 'ZT_IS_STATEFUL',
+			'column': 'TEMPLATE_IS_STATEFUL',
 			'type':'BOOLEAN',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Replicas',
-			'column': 'ZT_REPLICAS',
+			'column': 'TEMPLATE_REPLICAS',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'MountPath',
-			'column': 'ZT_MOUNT_PATH',
+			'column': 'TEMPLATE_MOUNT_PATH',
 			'type':'VARCHAR',
 			'id': false,
 			'required': false

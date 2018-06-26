@@ -5,28 +5,28 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZTV_ID',
+			'column': 'TEMPLATE_VARIABLE_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZTV_NAME',
+			'column': 'TEMPLATE_VARIABLE_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Value',
-			'column': 'ZTV_VALUE',
+			'column': 'TEMPLATE_VARIABLE_VALUE',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Template',
-			'column': 'ZTV_TEMPLATE',
+			'column': 'TEMPLATE_VARIABLE_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		}]
 });
 exports.list = function(settings) {

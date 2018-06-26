@@ -5,16 +5,16 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZTST_ID',
+			'column': 'SERVICE_TYPE_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZTST_NAME',
+			'column': 'SERVICE_TYPE_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		}]
 });
 exports.list = function(settings) {

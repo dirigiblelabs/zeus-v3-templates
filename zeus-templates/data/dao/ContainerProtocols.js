@@ -5,16 +5,16 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZCP_ID',
+			'column': 'CONTAINER_PROTOCOL_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZCP_NAME',
+			'column': 'CONTAINER_PROTOCOL_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		}]
 });
 exports.list = function(settings) {

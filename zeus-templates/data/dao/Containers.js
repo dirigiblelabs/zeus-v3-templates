@@ -5,34 +5,34 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZC_ID',
+			'column': 'CONTAINER_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Name',
-			'column': 'ZC_NAME',
+			'column': 'CONTAINER_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Image',
-			'column': 'ZC_IMAGE',
+			'column': 'CONTAINER_IMAGE',
 			'type':'VARCHAR',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Protocol',
-			'column': 'ZC_PROTOCOL',
+			'column': 'CONTAINER_PROTOCOL',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Port',
-			'column': 'ZC_PORT',
+			'column': 'CONTAINER_PORT',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		}]
 });
 exports.list = function(settings) {

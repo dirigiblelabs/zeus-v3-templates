@@ -5,22 +5,22 @@ var dao = daoApi.create({
 	'properties': [
 		{
 			'name':  'Id',
-			'column': 'ZTC_ID',
+			'column': 'TEMPLATE_CONTAINER_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Template',
-			'column': 'ZTC_TEMPLATE',
+			'column': 'TEMPLATE_CONTAINER_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		},		{
 			'name':  'Container',
 			'column': 'ZTC_CONTAINER',
 			'type':'INTEGER',
 			'id': false,
-			'required': false
+			'required': true
 		}]
 });
 exports.list = function(settings) {

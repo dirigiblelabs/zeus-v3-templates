@@ -7,25 +7,20 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZT_ID',
+                        'name': 'TEMPLATE_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZT_NAME',
+                        'name': 'TEMPLATE_NAME',
                         'type': 'VARCHAR',
                         'length': 64,
-                        'nullable': true
                     },                    {
-                        'name': 'ZT_IS_STATEFUL',
+                        'name': 'TEMPLATE_IS_STATEFUL',
                         'type': 'BOOLEAN',
-                        'length': 20,
-                        'nullable': true
                     },                    {
-                        'name': 'ZT_REPLICAS',
+                        'name': 'TEMPLATE_REPLICAS',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZT_MOUNT_PATH',
+                        'name': 'TEMPLATE_MOUNT_PATH',
                         'type': 'VARCHAR',
                         'length': 128,
                         'nullable': true
@@ -36,23 +31,19 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZTV_ID',
+                        'name': 'TEMPLATE_VARIABLE_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZTV_NAME',
+                        'name': 'TEMPLATE_VARIABLE_NAME',
                         'type': 'VARCHAR',
                         'length': 64,
-                        'nullable': true
                     },                    {
-                        'name': 'ZTV_VALUE',
+                        'name': 'TEMPLATE_VARIABLE_VALUE',
                         'type': 'VARCHAR',
                         'length': 128,
-                        'nullable': true
                     },                    {
-                        'name': 'ZTV_TEMPLATE',
+                        'name': 'TEMPLATE_VARIABLE_TEMPLATE',
                         'type': 'INTEGER',
-                        'nullable': true
                     }                ]
             },            {
                 'name': 'ZEUS_TEMPLATE_SERVICES',
@@ -60,26 +51,21 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZTS_ID',
+                        'name': 'TEMPLATE_SERVICE_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZTS_NAME',
+                        'name': 'TEMPLATE_SERVICE_NAME',
                         'type': 'VARCHAR',
                         'length': 20,
-                        'nullable': true
                     },                    {
-                        'name': 'ZTS_TYPE',
+                        'name': 'TEMPLATE_SERVICE_TYPE',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZTS_PORT',
+                        'name': 'TEMPLATE_SERVICE_PORT',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZTS_TEMPLATE',
+                        'name': 'TEMPLATE_SERVICE_TEMPLATE',
                         'type': 'INTEGER',
-                        'nullable': true
                     }                ]
             },            {
                 'name': 'ZEUS_TEMPLATE_SERVICE_TYPES',
@@ -87,14 +73,12 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZTST_ID',
+                        'name': 'SERVICE_TYPE_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZTST_NAME',
+                        'name': 'SERVICE_TYPE_NAME',
                         'type': 'VARCHAR',
                         'length': 20,
-                        'nullable': true
                     }                ]
             },            {
                 'name': 'ZEUS_CONTAINERS',
@@ -102,27 +86,22 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZC_ID',
+                        'name': 'CONTAINER_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZC_NAME',
+                        'name': 'CONTAINER_NAME',
                         'type': 'VARCHAR',
                         'length': 20,
-                        'nullable': true
                     },                    {
-                        'name': 'ZC_IMAGE',
+                        'name': 'CONTAINER_IMAGE',
                         'type': 'VARCHAR',
                         'length': 64,
-                        'nullable': true
                     },                    {
-                        'name': 'ZC_PROTOCOL',
+                        'name': 'CONTAINER_PROTOCOL',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZC_PORT',
+                        'name': 'CONTAINER_PORT',
                         'type': 'INTEGER',
-                        'nullable': true
                     }                ]
             },            {
                 'name': 'ZEUS_CONTAINER_PROTOCOLS',
@@ -130,14 +109,12 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZCP_ID',
+                        'name': 'CONTAINER_PROTOCOL_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZCP_NAME',
+                        'name': 'CONTAINER_PROTOCOL_NAME',
                         'type': 'VARCHAR',
                         'length': 20,
-                        'nullable': true
                     }                ]
             },            {
                 'name': 'ZEUS_TEMPLATE_CONTAINERS',
@@ -145,17 +122,14 @@
                 'columns': 
                 [
                     {
-                        'name': 'ZTC_ID',
+                        'name': 'TEMPLATE_CONTAINER_ID',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
-                        'name': 'ZTC_TEMPLATE',
+                        'name': 'TEMPLATE_CONTAINER_TEMPLATE',
                         'type': 'INTEGER',
-                        'nullable': true
                     },                    {
                         'name': 'ZTC_CONTAINER',
                         'type': 'INTEGER',
-                        'nullable': true
                     }                ]
             }        ]
     }
