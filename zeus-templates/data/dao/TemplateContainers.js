@@ -4,22 +4,20 @@ var dao = daoApi.create({
 	'table': 'ZEUS_TEMPLATE_CONTAINERS',
 	'properties': [
 		{
-			'name':  'Id',
+			'name': 'Id',
 			'column': 'TEMPLATE_CONTAINER_ID',
-			'type':'INTEGER',
+			'type': 'INTEGER',
 			'id': true,
 			'required': true
-		},		{
-			'name':  'Template',
+		}, {
+			'name': 'Template',
 			'column': 'TEMPLATE_CONTAINER_TEMPLATE',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
-		},		{
-			'name':  'Container',
+		}, {
+			'name': 'Container',
 			'column': 'ZTC_CONTAINER',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
 		}]
 });

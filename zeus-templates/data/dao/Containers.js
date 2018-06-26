@@ -4,34 +4,30 @@ var dao = daoApi.create({
 	'table': 'ZEUS_CONTAINERS',
 	'properties': [
 		{
-			'name':  'Id',
+			'name': 'Id',
 			'column': 'CONTAINER_ID',
-			'type':'INTEGER',
+			'type': 'INTEGER',
 			'id': true,
 			'required': true
-		},		{
-			'name':  'Name',
+		}, {
+			'name': 'Name',
 			'column': 'CONTAINER_NAME',
-			'type':'VARCHAR',
-			'id': false,
+			'type': 'VARCHAR',
 			'required': true
-		},		{
-			'name':  'Image',
+		}, {
+			'name': 'Image',
 			'column': 'CONTAINER_IMAGE',
-			'type':'VARCHAR',
-			'id': false,
+			'type': 'VARCHAR',
 			'required': true
-		},		{
-			'name':  'Protocol',
+		}, {
+			'name': 'Protocol',
 			'column': 'CONTAINER_PROTOCOL',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
-		},		{
-			'name':  'Port',
+		}, {
+			'name': 'Port',
 			'column': 'CONTAINER_PORT',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
 		}]
 });

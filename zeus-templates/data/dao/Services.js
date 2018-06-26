@@ -4,34 +4,30 @@ var dao = daoApi.create({
 	'table': 'ZEUS_TEMPLATE_SERVICES',
 	'properties': [
 		{
-			'name':  'Id',
+			'name': 'Id',
 			'column': 'TEMPLATE_SERVICE_ID',
-			'type':'INTEGER',
+			'type': 'INTEGER',
 			'id': true,
 			'required': true
-		},		{
-			'name':  'Name',
+		}, {
+			'name': 'Name',
 			'column': 'TEMPLATE_SERVICE_NAME',
-			'type':'VARCHAR',
-			'id': false,
+			'type': 'VARCHAR',
 			'required': true
-		},		{
-			'name':  'Type',
+		}, {
+			'name': 'Type',
 			'column': 'TEMPLATE_SERVICE_TYPE',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
-		},		{
-			'name':  'Port',
+		}, {
+			'name': 'Port',
 			'column': 'TEMPLATE_SERVICE_PORT',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
-		},		{
-			'name':  'Template',
+		}, {
+			'name': 'Template',
 			'column': 'TEMPLATE_SERVICE_TEMPLATE',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
 		}]
 });

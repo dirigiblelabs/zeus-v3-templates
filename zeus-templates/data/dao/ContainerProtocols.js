@@ -4,16 +4,15 @@ var dao = daoApi.create({
 	'table': 'ZEUS_CONTAINER_PROTOCOLS',
 	'properties': [
 		{
-			'name':  'Id',
+			'name': 'Id',
 			'column': 'CONTAINER_PROTOCOL_ID',
-			'type':'INTEGER',
+			'type': 'INTEGER',
 			'id': true,
 			'required': true
-		},		{
-			'name':  'Name',
+		}, {
+			'name': 'Name',
 			'column': 'CONTAINER_PROTOCOL_NAME',
-			'type':'VARCHAR',
-			'id': false,
+			'type': 'VARCHAR',
 			'required': true
 		}]
 });

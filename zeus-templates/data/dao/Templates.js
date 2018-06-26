@@ -4,35 +4,30 @@ var dao = daoApi.create({
 	'table': 'ZEUS_TEMPLATES',
 	'properties': [
 		{
-			'name':  'Id',
+			'name': 'Id',
 			'column': 'TEMPLATE_ID',
-			'type':'INTEGER',
+			'type': 'INTEGER',
 			'id': true,
 			'required': true
-		},		{
-			'name':  'Name',
+		}, {
+			'name': 'Name',
 			'column': 'TEMPLATE_NAME',
-			'type':'VARCHAR',
-			'id': false,
+			'type': 'VARCHAR',
 			'required': true
-		},		{
-			'name':  'IsStateful',
+		}, {
+			'name': 'IsStateful',
 			'column': 'TEMPLATE_IS_STATEFUL',
-			'type':'BOOLEAN',
-			'id': false,
+			'type': 'BOOLEAN',
 			'required': true
-		},		{
-			'name':  'Replicas',
+		}, {
+			'name': 'Replicas',
 			'column': 'TEMPLATE_REPLICAS',
-			'type':'INTEGER',
-			'id': false,
+			'type': 'INTEGER',
 			'required': true
-		},		{
-			'name':  'MountPath',
+		}, {
+			'name': 'MountPath',
 			'column': 'TEMPLATE_MOUNT_PATH',
-			'type':'VARCHAR',
-			'id': false,
-			'required': false
+			'type': 'VARCHAR',
 		}]
 });
 exports.list = function(settings) {
