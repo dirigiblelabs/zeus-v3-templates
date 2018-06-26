@@ -8,19 +8,19 @@ var dao = daoApi.create({
 			'column': 'ZTC_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Template',
 			'column': 'ZTC_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Container',
 			'column': 'ZTC_CONTAINER',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		}]
 });
 exports.list = function(settings) {

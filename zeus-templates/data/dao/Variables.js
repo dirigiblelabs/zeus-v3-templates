@@ -8,7 +8,7 @@ var dao = daoApi.create({
 			'column': 'ZTV_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Name',
 			'column': 'ZTV_NAME',
@@ -26,7 +26,7 @@ var dao = daoApi.create({
 			'column': 'ZTV_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		}]
 });
 exports.list = function(settings) {

@@ -8,31 +8,31 @@ var dao = daoApi.create({
 			'column': 'ZTS_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Name',
 			'column': 'ZTS_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Type',
 			'column': 'ZTS_TYPE',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Port',
 			'column': 'ZTS_PORT',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Template',
 			'column': 'ZTS_TEMPLATE',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		}]
 });
 exports.list = function(settings) {

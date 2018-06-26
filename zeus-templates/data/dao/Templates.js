@@ -8,7 +8,7 @@ var dao = daoApi.create({
 			'column': 'ZT_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Name',
 			'column': 'ZT_NAME',
@@ -20,19 +20,19 @@ var dao = daoApi.create({
 			'column': 'ZT_IS_STATEFUL',
 			'type':'BOOLEAN',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Replicas',
 			'column': 'ZT_REPLICAS',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'MountPath',
 			'column': 'ZT_MOUNT_PATH',
 			'type':'VARCHAR',
 			'id': false,
-			'required': true
+			'required': false
 		}]
 });
 exports.list = function(settings) {

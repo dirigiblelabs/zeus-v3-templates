@@ -1,289 +1,162 @@
 {
-    "schema": {
-        "structures": [
+    'schema': {
+        'structures': [
             {
-                "name": "ZEUS_TEMPLATES",
-                "type": "TABLE",
-                "columns": 
+                'name': 'ZEUS_TEMPLATES',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZT_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZT_NAME",
-                        "type": "VARCHAR",
-                        "length": "64",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZT_IS_STATEFUL",
-                        "type": "BOOLEAN",
-                        "length": "",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZT_REPLICAS",
-                        "type": "INTEGER",
-                        "length": "",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZT_MOUNT_PATH",
-                        "type": "VARCHAR",
-                        "length": "128",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            },
-            {
-                "name": "ZEUS_TEMPLATE_VARIABLES",
-                "type": "TABLE",
-                "columns": 
+                        'name': 'ZT_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZT_NAME',
+                        'type': 'VARCHAR',
+                        'length': 64,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZT_IS_STATEFUL',
+                        'type': 'BOOLEAN',
+                        'length': 20,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZT_REPLICAS',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZT_MOUNT_PATH',
+                        'type': 'VARCHAR',
+                        'length': 128,
+                        'nullable': true
+                    }                ]
+            },            {
+                'name': 'ZEUS_TEMPLATE_VARIABLES',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZTV_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTV_NAME",
-                        "type": "VARCHAR",
-                        "length": "64",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTV_VALUE",
-                        "type": "VARCHAR",
-                        "length": "128",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTV_TEMPLATE",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            },
-            {
-                "name": "ZEUS_TEMPLATE_SERVICES",
-                "type": "TABLE",
-                "columns": 
+                        'name': 'ZTV_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTV_NAME',
+                        'type': 'VARCHAR',
+                        'length': 64,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTV_VALUE',
+                        'type': 'VARCHAR',
+                        'length': 128,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTV_TEMPLATE',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    }                ]
+            },            {
+                'name': 'ZEUS_TEMPLATE_SERVICES',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZTS_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTS_NAME",
-                        "type": "VARCHAR",
-                        "length": "20",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTS_TYPE",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTS_PORT",
-                        "type": "INTEGER",
-                        "length": "20",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTS_TEMPLATE",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            },
-            {
-                "name": "ZEUS_TEMPLATE_SERVICE_TYPES",
-                "type": "TABLE",
-                "columns": 
+                        'name': 'ZTS_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTS_NAME',
+                        'type': 'VARCHAR',
+                        'length': 20,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTS_TYPE',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTS_PORT',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTS_TEMPLATE',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    }                ]
+            },            {
+                'name': 'ZEUS_TEMPLATE_SERVICE_TYPES',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZTST_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTST_NAME",
-                        "type": "VARCHAR",
-                        "length": "20",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            },
-            {
-                "name": "ZEUS_CONTAINERS",
-                "type": "TABLE",
-                "columns": 
+                        'name': 'ZTST_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTST_NAME',
+                        'type': 'VARCHAR',
+                        'length': 20,
+                        'nullable': true
+                    }                ]
+            },            {
+                'name': 'ZEUS_CONTAINERS',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZC_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZC_NAME",
-                        "type": "VARCHAR",
-                        "length": "20",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZC_IMAGE",
-                        "type": "VARCHAR",
-                        "length": "64",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZC_PROTOCOL",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZC_PORT",
-                        "type": "INTEGER",
-                        "length": "20",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            },
-            {
-                "name": "ZEUS_CONTAINER_PROTOCOLS",
-                "type": "TABLE",
-                "columns": 
+                        'name': 'ZC_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZC_NAME',
+                        'type': 'VARCHAR',
+                        'length': 20,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZC_IMAGE',
+                        'type': 'VARCHAR',
+                        'length': 64,
+                        'nullable': true
+                    },                    {
+                        'name': 'ZC_PROTOCOL',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZC_PORT',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    }                ]
+            },            {
+                'name': 'ZEUS_CONTAINER_PROTOCOLS',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZCP_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZCP_NAME",
-                        "type": "VARCHAR",
-                        "length": "20",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            },
-            {
-                "name": "ZEUS_TEMPLATE_CONTAINERS",
-                "type": "TABLE",
-                "columns": 
+                        'name': 'ZCP_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZCP_NAME',
+                        'type': 'VARCHAR',
+                        'length': 20,
+                        'nullable': true
+                    }                ]
+            },            {
+                'name': 'ZEUS_TEMPLATE_CONTAINERS',
+                'type': 'TABLE',
+                'columns': 
                 [
                     {
-                        "name": "ZTC_ID",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "true",
-                        "identity": "true",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTC_TEMPLATE",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    },
-                    {
-                        "name": "ZTC_CONTAINER",
-                        "type": "INTEGER",
-                        "length": "0",
-                        "primaryKey": "false",
-                        "identity": "false",
-                        "precision": "",
-                        "scale": ""
-                    }
-                ]
-            }
-        ]
+                        'name': 'ZTC_ID',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTC_TEMPLATE',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    },                    {
+                        'name': 'ZTC_CONTAINER',
+                        'type': 'INTEGER',
+                        'nullable': true
+                    }                ]
+            }        ]
     }
 }

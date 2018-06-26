@@ -8,31 +8,31 @@ var dao = daoApi.create({
 			'column': 'ZC_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Name',
 			'column': 'ZC_NAME',
 			'type':'VARCHAR',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Image',
 			'column': 'ZC_IMAGE',
 			'type':'VARCHAR',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Protocol',
 			'column': 'ZC_PROTOCOL',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Port',
 			'column': 'ZC_PORT',
 			'type':'INTEGER',
 			'id': false,
-			'required': true
+			'required': false
 		}]
 });
 exports.list = function(settings) {

@@ -8,7 +8,7 @@ var dao = daoApi.create({
 			'column': 'ZCP_ID',
 			'type':'INTEGER',
 			'id': true,
-			'required': true
+			'required': false
 		},		{
 			'name':  'Name',
 			'column': 'ZCP_NAME',
