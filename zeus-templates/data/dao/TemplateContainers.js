@@ -16,7 +16,7 @@ var dao = daoApi.create({
 			'required': true
 		}, {
 			'name': 'Container',
-			'column': 'ZTC_CONTAINER',
+			'column': 'TEMPLATE_CONTAINER_CONTAINER',
 			'type': 'INTEGER',
 			'required': true
 		}]

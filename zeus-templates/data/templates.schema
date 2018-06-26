@@ -7,6 +7,7 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'TEMPLATE_ID'
@@ -16,9 +17,11 @@
                         'name': 'TEMPLATE_NAME'
                     }, {
                         'type': 'BOOLEAN',
+                        'length': 20,
                         'name': 'TEMPLATE_IS_STATEFUL'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'TEMPLATE_REPLICAS'
                     }, {
                         'type': 'VARCHAR',
@@ -32,6 +35,7 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'TEMPLATE_VARIABLE_ID'
@@ -45,6 +49,7 @@
                         'name': 'TEMPLATE_VARIABLE_VALUE'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'TEMPLATE_VARIABLE_TEMPLATE'
                     }]
             }, {
@@ -53,6 +58,7 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'TEMPLATE_SERVICE_ID'
@@ -62,12 +68,15 @@
                         'name': 'TEMPLATE_SERVICE_NAME'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'TEMPLATE_SERVICE_TYPE'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'TEMPLATE_SERVICE_PORT'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'TEMPLATE_SERVICE_TEMPLATE'
                     }]
             }, {
@@ -76,6 +85,7 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'SERVICE_TYPE_ID'
@@ -90,6 +100,7 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'CONTAINER_ID'
@@ -103,9 +114,11 @@
                         'name': 'CONTAINER_IMAGE'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'CONTAINER_PROTOCOL'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'CONTAINER_PORT'
                     }]
             }, {
@@ -114,6 +127,7 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'CONTAINER_PROTOCOL_ID'
@@ -128,15 +142,18 @@
                 'columns': [
                     {
                         'type': 'INTEGER',
+                        'length': 20,
                         'primaryKey': true,
                         'identity': true,
                         'name': 'TEMPLATE_CONTAINER_ID'
                     }, {
                         'type': 'INTEGER',
+                        'length': 20,
                         'name': 'TEMPLATE_CONTAINER_TEMPLATE'
                     }, {
                         'type': 'INTEGER',
-                        'name': 'ZTC_CONTAINER'
+                        'length': 20,
+                        'name': 'TEMPLATE_CONTAINER_CONTAINER'
                     }]
             }        ]
     }
