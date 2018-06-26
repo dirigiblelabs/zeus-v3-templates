@@ -23,6 +23,33 @@
                         "identity": "false",
                         "precision": "",
                         "scale": ""
+                    },
+                    {
+                        "name": "ZT_IS_STATEFUL",
+                        "type": "BOOLEAN",
+                        "length": "",
+                        "primaryKey": "false",
+                        "identity": "false",
+                        "precision": "",
+                        "scale": ""
+                    },
+                    {
+                        "name": "ZT_REPLICAS",
+                        "type": "INTEGER",
+                        "length": "",
+                        "primaryKey": "false",
+                        "identity": "false",
+                        "precision": "",
+                        "scale": ""
+                    },
+                    {
+                        "name": "ZT_MOUNT_PATH",
+                        "type": "VARCHAR",
+                        "length": "128",
+                        "primaryKey": "false",
+                        "identity": "false",
+                        "precision": "",
+                        "scale": ""
                     }
                 ]
             },

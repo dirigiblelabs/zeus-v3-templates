@@ -23,6 +23,8 @@
 				<tr>
 					<th>#</th>
 					<th class="text-capitalize">Name</th>
+					<th class="text-capitalize">Stateful</th>
+					<th class="text-capitalize">Replicas</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -30,9 +32,11 @@
 				<tr ng-repeat="next in data" ng-class="{'bg-info':next && next.Id == selectedEntity.Id}" style="cursor: pointer;" ng-click="selectEntity(next)">
 					<td>{{$index + 1}}</td>
 					<td>{{next.Name}}</td>
+					<td><input type="checkbox" ng-model="next.IsStateful" disabled></td>
+					<td>{{next.Replicas}}</td>
 					<td>
-						<button type="button" ng-click="openDeleteDialog(next)" class="btn btn-lg btn-danger pull-right"><i class="fa fa-remove"></i></button>
-    					<button type="button" ng-click="openEditDialog(next)" class="btn btn-lg btn-success pull-right" style="margin-right: 0.5em"><i class="fa fa-pencil"></i></button>
+						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
+						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
 					</td>
 				</tr>
 			</tbody>
@@ -55,6 +59,18 @@
 						<div class="form-group">
 							<label>Name</label>
 							<input type="text" class="form-control" placeholder="Enter name" ng-model="entity.Name">
+						</div>
+						<div class="form-group">
+							<label>Stateful</label>
+							<input type="checkbox" ng-model="entity.IsStateful">
+						</div>
+						<div class="form-group">
+							<label>Replicas</label>
+							<input type="number" class="form-control" placeholder="Enter replicas" ng-model="entity.Replicas">
+						</div>
+						<div class="form-group">
+							<label>Mount Path</label>
+							<input type="text" class="form-control" placeholder="Enter mount path" ng-model="entity.MountPath">
 						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">

@@ -15,6 +15,24 @@ var dao = daoApi.create({
 			'type':'VARCHAR',
 			'id': false,
 			'required': false
+		},		{
+			'name':  'IsStateful',
+			'column': 'ZT_IS_STATEFUL',
+			'type':'BOOLEAN',
+			'id': false,
+			'required': true
+		},		{
+			'name':  'Replicas',
+			'column': 'ZT_REPLICAS',
+			'type':'INTEGER',
+			'id': false,
+			'required': true
+		},		{
+			'name':  'MountPath',
+			'column': 'ZT_MOUNT_PATH',
+			'type':'VARCHAR',
+			'id': false,
+			'required': true
 		}]
 });
 exports.list = function(settings) {
