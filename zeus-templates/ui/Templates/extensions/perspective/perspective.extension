@@ -1,5 +1,5 @@
 {
-	'description': 'Templates perspective',
-	'extensionPoint': 'launchpad-zeus-perspective',
-	'module': 'zeus-templates/ui/Templates/extensions/perspective/perspective.js'
+	"description": "Templates perspective",
+	"extensionPoint": "launchpad-zeus-perspective",
+	"module": "zeus-templates/ui/Templates/extensions/perspective/perspective.js"
 }
