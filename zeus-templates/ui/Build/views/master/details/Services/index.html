@@ -24,7 +24,6 @@
 					<th>#</th>
 					<th class="text-capitalize">Name</th>
 					<th class="text-capitalize">Type</th>
-					<th class="text-capitalize">Port</th>
 					<th class="text-capitalize">Host</th>
 					<th></th>
 				</tr>
@@ -34,7 +33,6 @@
 					<td>{{(dataPage - 1) * dataLimit + $index + 1}}</td>
 					<td>{{next.Name}}</td>
 					<td>{{typeOptionValue(next.Type)}}</td>
-					<td>{{next.Port}}</td>
 					<td>{{next.Host}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
