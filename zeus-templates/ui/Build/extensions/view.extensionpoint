@@ -1,0 +1,4 @@
+{
+	"description": "Extension Point for the Build View Providers",
+	"name": "launchpad-zeus-Build-view"
+}

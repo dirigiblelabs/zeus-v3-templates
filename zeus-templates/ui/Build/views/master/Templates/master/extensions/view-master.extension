@@ -1,0 +1,5 @@
+{
+	"description": "Build view",
+	"extensionPoint": "launchpad-zeus-Build-Templates-view",
+	"module": "zeus-templates/ui/Build/views/master/Templates/master/extensions/view.js"
+}

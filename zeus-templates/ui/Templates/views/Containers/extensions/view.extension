@@ -1,5 +1,0 @@
-{
-	"description": "Containers view",
-	"extensionPoint": "launchpad-Templates-view",
-	"module": "zeus-templates/ui/Templates/views/Containers/extensions/view.js"
-}

@@ -1,5 +1,0 @@
-{
-	"description": "Templates tiles",
-	"extensionPoint": "launchpad-zeus-tiles",
-	"module": "zeus-templates/ui/Templates/views/Templates/extensions/tile/tile.js"
-}
