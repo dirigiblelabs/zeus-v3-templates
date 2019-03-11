@@ -26,10 +26,6 @@ var dao = daoApi.create({
 			type: "INTEGER",
 			required: true
 		}, {
-			name: "Host",
-			column: "TEMPLATE_SERVICE_HOST",
-			type: "VARCHAR",
-		}, {
 			name: "Path",
 			column: "TEMPLATE_SERVICE_PATH",
 			type: "VARCHAR",

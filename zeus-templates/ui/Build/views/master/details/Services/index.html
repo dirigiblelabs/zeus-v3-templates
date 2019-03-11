@@ -24,7 +24,8 @@
 					<th>#</th>
 					<th class="text-capitalize">Name</th>
 					<th class="text-capitalize">Type</th>
-					<th class="text-capitalize">Host</th>
+					<th class="text-capitalize">Port</th>
+					<th class="text-capitalize">Path</th>
 					<th></th>
 				</tr>
 			</thead>
@@ -33,7 +34,8 @@
 					<td>{{(dataPage - 1) * dataLimit + $index + 1}}</td>
 					<td>{{next.Name}}</td>
 					<td>{{typeOptionValue(next.Type)}}</td>
-					<td>{{next.Host}}</td>
+					<td>{{next.Port}}</td>
+					<td>{{next.Path}}</td>
 					<td>
 						<i class="close fa fa-remove" ng-click="openDeleteDialog(next)" style="font-size: 1.4em"></i>
 						<i class="close fa fa-bars" ng-click="openEditDialog(next)" style="margin-right: 0.5em; font-size: 1.4em"></i>
@@ -67,10 +69,6 @@
 						<div class="form-group">
 							<label>Port</label>
 							<input type="number" class="form-control" placeholder="Enter port" ng-model="entity.Port">
-						</div>
-						<div class="form-group">
-							<label>Host</label>
-							<input type="text" class="form-control" placeholder="Enter host" ng-model="entity.Host">
 						</div>
 						<div class="form-group">
 							<label>Path</label>

@@ -76,11 +76,6 @@
                         "name": "TEMPLATE_SERVICE_PORT"
                     }, {
                         "type": "VARCHAR",
-                        "length": 256,
-                        "nullable": true,
-                        "name": "TEMPLATE_SERVICE_HOST"
-                    }, {
-                        "type": "VARCHAR",
                         "length": 32,
                         "nullable": true,
                         "name": "TEMPLATE_SERVICE_PATH"
