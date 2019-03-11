@@ -10,12 +10,12 @@
 
 var dao = require('zeus-templates/data/dao/Build/Templates.js')
 
-exports.getTile = function() {
+exports.getTile = function(relativePath) {
 	return {
 		'name': 'Templates',
 		'group': 'Build',
 		'icon': 'files-o',
-		'location': '/services/v3/web/zeus-templates/ui/Build/index.html',
+		'location': relativePath + 'services/v3/web/zeus-templates/ui/Build/index.html',
 		'count': dao.customDataCount(),
 		'order': '200'
 	};

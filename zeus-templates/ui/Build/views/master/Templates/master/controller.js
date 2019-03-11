@@ -1,5 +1,16 @@
 angular.module('page', ['ngAnimate', 'ui.bootstrap']);
 angular.module('page')
+.factory('httpRequestInterceptor', function () {
+	return {
+		request: function (config) {
+			config.headers['X-Requested-With'] = 'Fetch';
+			return config;
+		}
+	};
+})
+.config(['$httpProvider', function($httpProvider) {
+	$httpProvider.interceptors.push('httpRequestInterceptor');
+}])
 .factory('$messageHub', [function(){
 	var messageHub = new FramesMessageHub();
 
@@ -27,7 +38,7 @@ angular.module('page')
 }])
 .controller('PageController', function ($scope, $http, $messageHub) {
 
-	var api = '/services/v3/js/zeus-templates/api/Build/Templates.js';
+	var api = '../../../../../../../../../../services/v3/js/zeus-templates/api/Build/Templates.js';
 
 	$scope.dateOptions = {
 		startingDay: 1

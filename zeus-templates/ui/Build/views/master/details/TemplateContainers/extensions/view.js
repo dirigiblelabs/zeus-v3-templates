@@ -8,13 +8,13 @@
  * SAP - initial API and implementation
  */
 
-exports.getView = function() {
+exports.getView = function(relativePath) {
 	return {
 		'id': 'TemplateContainers',
 		'name': 'Containers',
 		'label': 'Containers',
 		'factory': 'frame',
 		'region': 'center-bottom',
-		'link': '/services/v3/web/zeus-templates/ui/Build/views/master/details/TemplateContainers/index.html'
+		'link': relativePath + 'services/v3/web/zeus-templates/ui/Build/views/master/details/TemplateContainers/index.html'
 	};
 };

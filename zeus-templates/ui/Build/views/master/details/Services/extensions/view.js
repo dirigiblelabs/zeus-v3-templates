@@ -8,13 +8,13 @@
  * SAP - initial API and implementation
  */
 
-exports.getView = function() {
+exports.getView = function(relativePath) {
 	return {
 		'id': 'Services',
 		'name': 'Services',
 		'label': 'Services',
 		'factory': 'frame',
 		'region': 'center-bottom',
-		'link': '/services/v3/web/zeus-templates/ui/Build/views/master/details/Services/index.html'
+		'link': relativePath + 'services/v3/web/zeus-templates/ui/Build/views/master/details/Services/index.html'
 	};
 };
