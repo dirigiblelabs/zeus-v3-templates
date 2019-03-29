@@ -1,4 +1,4 @@
-var rs = require('http/v3/rs');
+var rs = require('http/v4/rs');
 var dao = require('zeus-templates/data/dao/Build/Variables');
 var http = require('zeus-templates/api/http');
 

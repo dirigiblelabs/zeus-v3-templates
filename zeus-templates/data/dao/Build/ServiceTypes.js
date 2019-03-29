@@ -1,6 +1,6 @@
-var query = require("db/v3/query");
-var producer = require("messaging/v3/producer");
-var daoApi = require("db/v3/dao");
+var query = require("db/v4/query");
+var producer = require("messaging/v4/producer");
+var daoApi = require("db/v4/dao");
 var dao = daoApi.create({
 	table: "ZEUS_TEMPLATE_SERVICE_TYPES",
 	properties: [
