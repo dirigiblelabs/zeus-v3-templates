@@ -15,7 +15,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE_MASTER",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -201,7 +201,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -336,7 +336,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -529,7 +529,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -606,7 +606,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -770,7 +770,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -847,7 +847,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {
@@ -953,7 +953,7 @@
                 "menuIndex": 100,
                 "layoutType": "MANAGE_DETAILS",
                 "perspectiveName": "Build",
-                "perspectiveIcon": "code",
+                "perspectiveIcon": "cogs",
                 "perspectiveOrder": "200",
                 "properties": [
                     {

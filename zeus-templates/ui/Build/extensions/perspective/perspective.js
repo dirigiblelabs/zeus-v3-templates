@@ -11,7 +11,7 @@
 exports.getPerspective = function(relativePath) {
 	return {
 		'name': 'Build',
-		'image': 'code',
+		'image': 'cogs',
 		'link': relativePath + 'services/v3/web/zeus-templates/ui/Build/index.html',
 		'order': 200,
 	};
