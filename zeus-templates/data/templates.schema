@@ -28,6 +28,11 @@
                         "length": 128,
                         "nullable": true,
                         "name": "TEMPLATE_MOUNT_PATH"
+                    }, {
+                        "type": "BOOLEAN",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "TEMPLATE_MOUNT_CONFIGMAPS"
                     }]
             }, {
                 "name": "ZEUS_TEMPLATE_VARIABLES",

@@ -29,6 +29,10 @@ var dao = daoApi.create({
 			name: "MountPath",
 			column: "TEMPLATE_MOUNT_PATH",
 			type: "VARCHAR",
+		}, {
+			name: "MountConfigMaps",
+			column: "TEMPLATE_MOUNT_CONFIGMAPS",
+			type: "BOOLEAN",
 		}]
 });
 

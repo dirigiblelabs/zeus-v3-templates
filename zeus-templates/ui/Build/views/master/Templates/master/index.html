@@ -72,6 +72,10 @@
 							<label>Mount Path</label>
 							<input type="text" class="form-control" placeholder="Enter mount path" ng-model="entity.MountPath">
 						</div>
+						<div class="form-group">
+							<label>Mount Config Maps</label>
+							<input type="checkbox" ng-model="entity.MountConfigMaps">
+						</div>
 					</form>
 					<div ng-show="actionType === 'delete'">
 						You are going to delete <b>Templates</b> with <b>Id = {{entity.Id}}</b>.
