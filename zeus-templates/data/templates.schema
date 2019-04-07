@@ -160,6 +160,43 @@
                         "length": 20,
                         "name": "TEMPLATE_CONTAINER_CONTAINER"
                     }]
+            }, {
+                "name": "ZEUS_TEMPLATE_CONFIGMAPS",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 32,
+                        "nullable": true,
+                        "name": "NAME"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 64,
+                        "nullable": true,
+                        "name": "KEY"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 64,
+                        "nullable": true,
+                        "name": "MOUNTPATH"
+                    }, {
+                        "type": "VARCHAR",
+                        "length": 50000,
+                        "nullable": true,
+                        "name": "DATA"
+                    }, {
+                        "type": "INTEGER",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "TEMPLATE"
+                    }]
             }]
     }
 }

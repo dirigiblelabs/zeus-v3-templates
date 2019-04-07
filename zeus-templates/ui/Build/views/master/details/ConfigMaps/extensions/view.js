@@ -8,11 +8,13 @@
  * SAP - initial API and implementation
  */
 
-exports.getPerspective = function(relativePath) {
+exports.getView = function(relativePath) {
 	return {
-		'name': 'Build',
-		'image': 'code',
-		'link': relativePath + 'services/v3/web/zeus-templates/ui/Build/index.html',
-		'order': 200,
+		'id': 'ConfigMaps',
+		'name': 'ConfigMaps',
+		'label': 'ConfigMaps',
+		'factory': 'frame',
+		'region': 'center-bottom',
+		'link': relativePath + 'services/v3/web/zeus-templates/ui/Build/views/master/details/ConfigMaps/index.html'
 	};
 };

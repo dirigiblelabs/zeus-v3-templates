@@ -31,6 +31,7 @@ var dao = daoApi.create({
 			type: "VARCHAR",
 		}]
 });
+
 exports.list = function(settings) {
 	return dao.list(settings);
 };

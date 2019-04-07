@@ -22,6 +22,7 @@ var dao = daoApi.create({
 			required: true
 		}]
 });
+
 exports.list = function(settings) {
 	return dao.list(settings);
 };
